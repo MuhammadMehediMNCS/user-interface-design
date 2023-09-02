@@ -80,8 +80,11 @@ class _UserPage2State extends State<UserPage2> {
               ),
               const SizedBox(height: 30.0),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Radio(
+                  Row(
+                    children: [
+                      Radio(
                     value: 'Remember me',
                     groupValue: currentValue,
                     onChanged: (value) {
@@ -89,7 +92,8 @@ class _UserPage2State extends State<UserPage2> {
                     }
                   ),
                   const Text('Remember me', style: TextStyle(fontSize: 12.0),),
-                  const SizedBox(width: 75.0),
+                    ],
+                  ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.indigo,
@@ -125,7 +129,7 @@ class _UserPage2State extends State<UserPage2> {
                     child: Container(
                       color: Colors.indigo,
                       child: IconButton(
-                        icon: const Icon(Icons.facebook_sharp, size: 28, color: Colors.white,),
+                        icon: const Icon(Icons.facebook_sharp, size: 25, color: Colors.white,),
                         onPressed: () {}
                       ),
                     ),
