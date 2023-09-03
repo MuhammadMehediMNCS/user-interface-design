@@ -157,7 +157,7 @@ class _DetailsDesignState extends State<DetailsDesign> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: const [
-                          Icon(Icons.circle, color: Colors.grey,),
+                          Icon(Icons.join_full, color: Colors.grey,),
                           Text(
                             '4.5',
                             style: TextStyle(fontSize: 22,),
